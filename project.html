@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bubblegum+Sans&family=Noto+Sans+Bhaiksuki&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
   <title>Projects</title>
 </head>
 <body>
   <header>
-    <h1>Projects</h1>
-    <nav>
+    <h1 class="project-header">Projects</h1>
+    <nav class="main-nav">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -20,33 +22,45 @@
   </header>
 
   <main>
-    <article>
-      <h4><u>IoT Wardrobe Management Dashboard</u></h4>
-      <p>
-        Built a full-stack dashboard to manage wardrobe IoT devices and monitor real-time sensor data. Engineered secure user authentication and protected routes in the backend with FastAPI. Integrated MQTT for live ESP32 data streaming and an AI assistant via OpenAI API to recommend outfits. Designed a responsive, mobile-friendly UI and deployed the entire application using Docker.
-      </p>
-      <button>See the project here!</button>
-    </article>
+    <section class="projects-container">
 
-    <article>
-      <h4><u>HTTP Chat Server</u></h4>
-      <p>
-        Developed a lightweight HTTP server in C from scratch to handle real-time chat messages and reactions. Supported more than 100,000 messages using efficient manual memory management and custom data structures. Implemented HTTP request parsing, URL decoding, and proper routing to handle various endpoints. Ensured robustness and prevented memory leaks through meticulous error handling and memory cleanup.
-      </p>
-      <button>See the project here!</button>
-    </article>
+      <article class="project-card">
+        <h4><u>IoT Wardrobe Management Dashboard</u></h4>
+        <p>
+          Built a full-stack dashboard to manage wardrobe IoT devices and monitor real-time sensor data. Engineered secure user authentication and protected routes in the backend with FastAPI. Integrated MQTT for live ESP32 data streaming and an AI assistant via OpenAI API to recommend outfits. Designed a responsive, mobile-friendly UI and deployed the entire application using Docker.
+        </p>
+        <a href="https://github.com/abdi-saalim/http-chat-server" target="_blank">See the project here!</a>
+      </article>
+  
+      <article class="project-card">
+        <h4><u>HTTP Chat Server</u></h4>
+        <p>
+          Developed a lightweight HTTP server in C from scratch to handle real-time chat messages and reactions. Supported more than 100,000 messages using efficient manual memory management and custom data structures. Implemented HTTP request parsing, URL decoding, and proper routing to handle various endpoints. Ensured robustness and prevented memory leaks through meticulous error handling and memory cleanup.
+        </p>
+        <a href="https://github.com/abdi-saalim/http-chat-server" target="_blank">See the project here!</a>
+      </article>
+  
+      <article class="project-card  center-card">
+        <h4><u>Contact Manager</u></h4>
+        <p>
+          Built a client-side contact manager with full CRUD functionality using persistent browser local storage. Designed an intuitive and responsive UI to ensure a seamless user experience across devices. Implemented modular JavaScript for clean DOM manipulation and efficient event handling. Deployed the app via GitHub Pages with configured static routing and hosting.
+        </p>
+        <a href="https://github.com/abdi-saalim/Contact_manager" target="_blank">See the project here!</a>
+      </article>
 
-    <article>
-      <h4><u>Contact Manager</u></h4>
-      <p>
-        Built a client-side contact manager with full CRUD functionality using persistent browser local storage. Designed an intuitive and responsive UI to ensure a seamless user experience across devices. Implemented modular JavaScript for clean DOM manipulation and efficient event handling. Deployed the app via GitHub Pages with configured static routing and hosting.
-      </p>
-      <button>See the project here!</button>
-    </article>
+    </section>
+    
   </main>
 
-  <dialog open>
+  <dialog>
     <p>More projects on the way!</p>
   </dialog>
+  <br>
+  <footer class="footer">
+    <p><img src="./assets/logos/email.svg" class="icon" > saalimabdi23@gmail.com</p>
+    <p><img src="./assets/logos/phone.svg" class="icon"> 858-308-4454</p>
+    <p><img src="./assets/logos/location.svg" class="icon"> San Diego, CA</p>
+    <p>© 2025 Saalim Abdi</p>
+  </footer>
 </body>
 </html>
