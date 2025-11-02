@@ -1,0 +1,99 @@
+:root {
+    --light-grey: #f2f2f2;
+    --bubble-hover: lightblue;
+}
+
+body{
+    background-color: var(--light-grey);
+}
+
+.footer {
+    background: #e6e6e6;
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer .icon {
+    width: 16px;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+/* CSS for Home Page */
+
+.intro-header{
+    text-align: center;
+    font-family:"Bubblegum Sans", Arial, sans-serif;
+    margin-top: 25px;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-links img {
+    width: 45px;
+    height: 45px;
+    margin-top: 1rem;
+}
+
+#profile{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#intro-text{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.profile-img{
+    display: block;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 1rem auto;
+    border: 5px solid lightblue;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.main-nav a {
+    padding: 0.5rem 1.2rem;
+    background: white;
+    border: 2px solid #bcd8ff;
+    border-radius: 50px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.main-nav a:hover{
+    background: var(--bubble-hover);
+}
+
+/* CSS for Project Page */
+/* CSS for Experience Page */
+/* CSS for Resume Page */
+/* CSS for About Page */
+

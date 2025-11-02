@@ -5,22 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfolio website for Saalim Abdi, a Computer Engineering student.">
   <title>Portfolio Website</title>
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bubblegum+Sans&family=Noto+Sans+Bhaiksuki&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="icon" href="./assets/images/Me.jpg" type="image/jpeg">
-
-  <style>
-    img {
-      border: 5px dotted black;
-    }
-  </style>
 </head>
 
 <body>
-  <header>
-    <h1><b>Saalim Abdi</b></h1>
-    <h2>Welcome to my Portfolio Site!</h2>
+  <header class="intro-header">
+    <h1 class="title">Saalim Abdi</h1>
+    <h2 class="title">Welcome to my Portfolio Site!</h2>
   </header>
 
-  <nav>
+  <nav class="main-nav">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
@@ -31,32 +27,31 @@
   </nav>
 
   <main>
-    <img src="./assets/images/Me.jpg" alt="Profile Image" width="200">
-    <h3><u>Computer Engineering Student</u></h3>
+    <section id="profile">
+      <img src="./assets/images/Me.jpg" alt="Profile Image" class="profile-img">
+      <h3>UCSD Computer Engineering Student</h3>
+      <p id="intro-text">Computer engineering student eager to gain hands-on experience building real-world software solutions and exploring the intersection of hardware and software.</p>
+    </section>
+
+    <section class="social-links">
+      <a href="https://www.instagram.com/abdi.saalim" target="_blank">
+        <img src="./assets/logos/instagram.webp" alt="Instagram">
+      </a>
+      <a href="https://www.linkedin.com/in/saalim-abdi/" target="_blank">
+        <img src="./assets/logos/linkedin.webp" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/abdi-saalim" target="_blank">
+        <img src="./assets/logos/github.webp" alt="GitHub">
+      </a>
+    </section>
   </main>
 
-  <footer>
-    <form>
-      <fieldset>
-        <legend>Contact Form</legend>
-        <label for="name">Name:</label>
-        <input type="text" id="name"><br><br>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email"><br><br>
-
-        <label for="message">Message:</label>
-        <textarea id="message"></textarea><br><br>
-
-        <button type="submit">Send</button>
-      </fieldset>
-    </form>
+  <footer class="footer">
+    <p><img src="./assets/logos/email.svg" class="icon" > saalimabdi23@gmail.com</p>
+    <p><img src="./assets/logos/phone.svg" class="icon"> 858-308-4454</p>
+    <p><img src="./assets/logos/location.svg" class="icon"> San Diego, CA</p>
+    <p>© 2025 Saalim Abdi</p>
   </footer>
-  <script>
-    console.log("Portfolio site loaded");
-  </script>
-  <noscript>
-    <p>Your browser has JavaScript disabled. Some features may not work properly.</p>
-  </noscript>
+
 </body>
 </html>
